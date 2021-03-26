@@ -37,14 +37,14 @@ docker run -d \
 --name aliyunddns \
 -v {your_config_path}:/aliyunddns/config.yaml \         #请修改为自己实际的config文件路径
 --restart always \
-yangjunqiu/aliyunddns:latest
+xiuhanq/aliyunddns:latest
 ```
 # docker-compose 配置
 ```
 version: "3.8"
 services:
   aliyunddns:
-    image: yangjunqiu/aliyunddns:latest
+    image: xiuhanq/aliyunddns:latest
     container_name: aliyunddns
     volumes:
       - {your_config_path}:/aliyunddns/config.yaml      #请修改为自己实际的config文件路径
